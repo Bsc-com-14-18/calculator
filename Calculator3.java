@@ -30,6 +30,7 @@ public class Calculator3 extends Application {
         pane.setCenter(gPane);
         pane.setRight(oPsvbox);
 
+        //creating textfield and clear button
         TextField TxFld = new TextField();
         Button backspace = new Button ("Clear");
         fPane.getChildren().add(TxFld);
@@ -45,7 +46,7 @@ public class Calculator3 extends Application {
         PrimaryStage.setScene(scene);
         PrimaryStage.show();
 
-
+        //creating buttons and detting positions, size 
         Button button1 = new Button("1");
         Button button2 = new Button("2");
         Button button3 = new Button("3");
@@ -98,6 +99,7 @@ public class Calculator3 extends Application {
         btnMultiply.setPrefSize(60, 60);
         btnEquals.setPrefSize(60, 60);
 
+        //giving action to buttons
         button1.setOnAction((ActionEvent e)->{
           TxFld.setText(TxFld.getText()+ "1");
         });
